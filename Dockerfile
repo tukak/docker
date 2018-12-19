@@ -17,3 +17,5 @@ ADD https://dgby.org/~john/.oracle/instantclient-basiclite-linux.x64-11.2.0.4.0.
 RUN unzip /instantclient-*.zip \
  && rm /instantclient-*.zip \
 && mv ${INSTANTCLIENT} /usr/lib/
+
+RUN pip install cx_Oracle
